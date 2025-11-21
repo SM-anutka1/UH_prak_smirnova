@@ -1,0 +1,288 @@
+.footer {
+  background-color: #DEC6BE;
+  width: 100%;
+  color: black;
+  padding: 40px 0;
+  margin-top: 200px;
+}
+
+.footer__container {
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 60px;
+  margin-top: -30px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__title {
+  font-size: 32px;
+  color: black;
+  margin: 0;
+}
+
+.footer__text1,
+.footer__text2,
+.footer__text3 {
+  font-size: 20px;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer__text1:hover,
+.footer__text2:hover,
+.footer__text3:hover {
+  color: #666;
+}
+
+.footer__phone {
+  font-size: 20px;
+  color: black;
+  margin: 0;
+  display: flex;
+}
+
+.footer__address {
+  font-size: 20px;
+  color: black;
+  line-height: 1.4;
+}
+
+.footer__text {
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+  margin: 0;
+}
+
+.footer__info {
+  font-size: 20px;
+  color: black;
+}
+
+.footer__social {
+  display: flex;
+  gap: 18px;
+  margin-top: 120px;
+  margin-left: 200px;
+  margin-right: 100px;
+}
+
+.big {
+  margin-left: 200px;
+}
+
+.footer__title {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__column a {
+  text-decoration: none;
+}
+
+/* Tablet: 768–1279px */
+@media (max-width: 1279px) {
+  .footer {
+    padding: 30px 0;
+    margin-top: 150px;
+  }
+
+  .footer__container {
+    gap: 40px;
+    margin-top: -20px;
+    padding: 0 30px;
+  }
+
+  .footer__title {
+    font-size: 28px;
+  }
+
+  .footer__text1,
+  .footer__text2,
+  .footer__text3,
+  .footer__phone,
+  .footer__address,
+  .footer__text,
+  .footer__info {
+    font-size: 18px;
+  }
+
+  .footer__social {
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 50px;
+    gap: 15px;
+  }
+
+  .big {
+    margin-left: 100px;
+  }
+
+  .footer__column {
+    gap: 10px;
+  }
+}
+
+/* Mobile: ≤767px */
+@media (max-width: 767px) {
+  .footer {
+    padding: 25px 0;
+    margin-top: 100px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  .footer__title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer__text1,
+  .footer__text2,
+  .footer__text3,
+  .footer__phone,
+  .footer__address,
+  .footer__text,
+  .footer__info {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .footer__column {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .footer__social {
+    margin: 40px auto 0;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    gap: 12px;
+  }
+
+  .big {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Улучшаем отступы для мобильных */
+  .footer__column:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .footer__column:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+/* Small Mobile: ≤480px */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 0;
+    margin-top: 80px;
+  }
+
+  .footer__container {
+    padding: 0 15px;
+    gap: 25px;
+  }
+
+  .footer__title {
+    font-size: 22px;
+  }
+
+  .footer__text1,
+  .footer__text2,
+  .footer__text3,
+  .footer__phone,
+  .footer__address,
+  .footer__text,
+  .footer__info {
+    font-size: 15px;
+  }
+
+  .footer__social {
+    margin-top: 30px;
+    gap: 10px;
+  }
+
+  .footer__column {
+    gap: 6px;
+  }
+
+  /* Уменьшаем иконки соцсетей для мобильных */
+  .footer__social svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Очень маленькие экраны: ≤360px */
+@media (max-width: 360px) {
+  .footer {
+    padding: 15px 0;
+    margin-top: 60px;
+  }
+
+  .footer__container {
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .footer__title {
+    font-size: 20px;
+  }
+
+  .footer__text1,
+  .footer__text2,
+  .footer__text3,
+  .footer__phone,
+  .footer__address,
+  .footer__text,
+  .footer__info {
+    font-size: 14px;
+  }
+
+  .footer__social {
+    margin-top: 25px;
+    gap: 8px;
+  }
+
+  .footer__social svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Дополнительные улучшения для доступности */
+@media (max-width: 767px) {
+  .footer__text1,
+  .footer__text2,
+  .footer__text3 {
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  /* Увеличиваем область клика для мобильных */
+  .footer__column a {
+    display: block;
+    padding: 8px 0;
+  }
+}

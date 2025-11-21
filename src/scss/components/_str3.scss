@@ -1,0 +1,206 @@
+.help_zagol{
+  font-size: 48px;
+  text-align: center;
+}
+.adress_zagol{
+  font-size: 48px;
+  margin-left: 100px;
+}
+.adress{
+  margin-top: 20px;
+}
+.cont{
+  display: flex;
+  gap: 20px;
+  margin-left: 100px;
+  padding-top: 50px;
+}
+.adress_text{
+  font-size: 40px;
+  padding-left: 20px;
+}
+.contacts{
+  gap: 30px;
+}
+.cost_seti_text{
+  font-size: 40px;
+  margin-left: 100px;
+}
+.icons{
+  margin-left: 435px;
+  gap: 60px;
+  margin-top: 70px;
+  display: flex;
+}
+.cots_seti{
+  margin-top: 130px;
+  gap: 900px;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.taxi_text{
+  font-size: 20px;
+  padding-left: 55px;
+  padding-top: 10px;
+}
+.text_map{
+  font-size: 64px;
+  text-align: center;
+  margin-top: 90px;
+}
+.text_map2{
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Tablet: 768–1279px */
+@media (max-width: 1279px) {
+  .help_zagol,
+  .adress_zagol {
+    font-size: 32px;
+    margin-left: 60px;
+  }
+
+  .cont {
+    margin-left: 60px;
+    padding-top: 40px;
+    gap: 15px;
+  }
+
+  .adress_text,
+  .cost_seti_text {
+    font-size: 24px;
+  }
+
+  .cost_seti_text {
+    margin-left: 60px;
+  }
+
+  .icons {
+    margin-left: 300px;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  /* Уменьшаем иконки для планшета */
+  .icons svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cots_seti {
+    margin-top: 100px;
+    gap: 600px;
+  }
+
+  .map {
+    margin-top: 150px;
+  }
+
+  /* Уменьшаем карту для планшета */
+  .map iframe {
+    width: 600px;
+    height: 400px;
+  }
+
+  .text_map {
+    font-size: 48px;
+    margin-top: 70px;
+  }
+
+  .text_map2 {
+    font-size: 28px;
+  }
+
+}
+
+/* Mobile: ≤767px */
+@media (max-width: 767px) {
+  .help_zagol,
+  .adress_zagol {
+    font-size: 20px;
+  }
+
+  .adress_zagol {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .cont {
+    margin-left: 0;
+    padding-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .adress_text,
+  .cost_seti_text {
+    font-size: 24px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .cost_seti_text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .icons {
+    margin-left: 0;
+    gap: 25px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Уменьшаем иконки для мобильных */
+  .icons svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .cots_seti {
+    margin-top: 80px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map {
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+
+  /* Уменьшаем карту для мобильных */
+  .map iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+  }
+
+  .text_map {
+    font-size: 36px;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+
+  .text_map2 {
+    font-size: 22px;
+    padding: 0 20px;
+    line-height: 1.4;
+  }
+
+
+  .adress {
+    margin-top: 15px;
+    text-align: center;
+  }
+}

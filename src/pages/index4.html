@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <title> Каталог </title>
+    <style>
+        .menu a[href="./index4.html"] {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+        }
+    </style>
+</head>
+<body>
+
+@@include('../components/_header.html',{
+})
+
+<div class="Catalog">
+    <div class="catalog_header">
+        <div class="catalog_text">
+            <p>Каталог</p>
+        </div>
+
+        <div class="catalog_menu__container">
+            <input type="checkbox" id="catalog_menu__toggle" class="catalog_menu__checkbox">
+
+            <label for="catalog_menu__toggle" class="catalog_menu__toggle">
+                <svg class="catalog_menu__icon" width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 2.5H57.5M12.8125 23H57.5M23.125 43.5H57.5" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </label>
+
+            <!-- Выпадающее меню -->
+            <div class="catalog_menu__overlay">
+                <div class="catalog_menu__content">
+                    <nav class="catalog_menu__nav">
+                        <a href="#" class="catalog_menu__item">По популярности</a>
+                        <a href="#" class="catalog_menu__item">По новинке</a>
+                        <a href="#" class="catalog_menu__item">По рейтингу</a>
+                        <a href="#" class="catalog_menu__item">По скидкам</a>
+                    </nav>
+
+                    <!-- Кнопка закрытия -->
+                    <label for="catalog_menu__toggle" class="catalog_menu__close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card1">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/barabanchik.webp",
+            "alt": "Барабанная установка",
+            "title": "Барабаны",
+            "text": "Ударные",
+            "cost": "17 990 руб"
+            })
+        </div>
+        <div class="card2">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Guitar.webp",
+            "alt": "Гитара",
+            "title": "Гитара",
+            "text": "Струнные",
+            "cost": "8 790 руб"
+            })
+        </div>
+        <div class="card3">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Skripka.webp",
+            "alt": "Скрипка",
+            "title": "Скрипка",
+            "text": "Струнные",
+            "cost": "5 000 руб"
+            })
+        </div>
+    </div>
+
+    <div class="cards2">
+        <div class="card1">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/barabanchik.webp",
+            "alt": "Барабанная установка",
+            "title": "Барабаны",
+            "text": "Ударные",
+            "cost": "17 990 руб"
+            })
+        </div>
+        <div class="card2">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Guitar.webp",
+            "alt": "Гитара",
+            "title": "Гитара",
+            "text": "Струнные",
+            "cost": "8 790 руб"
+            })
+        </div>
+        <div class="card3">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Skripka.webp",
+            "alt": "Скрипка",
+            "title": "Скрипка",
+            "text": "Струнные",
+            "cost": "5 000 руб"
+            })
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card1">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/barabanchik.webp",
+            "alt": "Барабанная установка",
+            "title": "Барабаны",
+            "text": "Ударные",
+            "cost": "17 990 руб"
+            })
+        </div>
+        <div class="card2">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Guitar.webp",
+            "alt": "Гитара",
+            "title": "Гитара",
+            "text": "Струнные",
+            "cost": "8 790 руб"
+            })
+        </div>
+        <div class="card3">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Skripka.webp",
+            "alt": "Скрипка",
+            "title": "Скрипка",
+            "text": "Струнные",
+            "cost": "5 000 руб"
+            })
+        </div>
+    </div>
+
+    <div class="cards2">
+        <div class="card1">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/barabanchik.webp",
+            "alt": "Барабанная установка",
+            "title": "Барабаны",
+            "text": "Ударные",
+            "cost": "17 990 руб"
+            })
+        </div>
+        <div class="card2">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Guitar.webp",
+            "alt": "Гитара",
+            "title": "Гитара",
+            "text": "Струнные",
+            "cost": "8 790 руб"
+            })
+        </div>
+        <div class="card3">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Skripka.webp",
+            "alt": "Скрипка",
+            "title": "Скрипка",
+            "text": "Струнные",
+            "cost": "5 000 руб"
+            })
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card1">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/barabanchik.webp",
+            "alt": "Барабанная установка",
+            "title": "Барабаны",
+            "text": "Ударные",
+            "cost": "17 990 руб"
+            })
+        </div>
+        <div class="card2">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Guitar.webp",
+            "alt": "Гитара",
+            "title": "Гитара",
+            "text": "Струнные",
+            "cost": "8 790 руб"
+            })
+        </div>
+        <div class="card3">
+            @@include('../components/_card_goods.html', {
+            "img": "./assets/images/Skripka.webp",
+            "alt": "Скрипка",
+            "title": "Скрипка",
+            "text": "Струнные",
+            "cost": "5 000 руб"
+            })
+        </div>
+    </div>
+
+</div>
+@@include('../components/_footer.html')
+</body>
+</html>

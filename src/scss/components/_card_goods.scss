@@ -1,0 +1,295 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 562px;
+  height: 686px;
+  background-color: #FEF9F2;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_image {
+  width: 100%;
+  height: 394px;
+  object-fit: contain; /* Изменено с cover на contain */
+  object-position: center;
+  display: block;
+  padding: 10px; /* Добавлен отступ */
+}
+
+.card__body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Добавлен равномерный отступ между элементами */
+}
+
+.card__title {
+  font-size: 28px;
+  color: black;
+  margin-bottom: 0; /* Убраны лишние отступы */
+}
+
+.card__text {
+  font-size: 24px; /* Уменьшен размер шрифта */
+  color: #666; /* Изменен цвет на менее яркий */
+  margin-bottom: 0;
+}
+
+.card__cost {
+  font-size: 26px;
+  color: black;
+  margin-bottom: 0;
+}
+
+.like__checkbox,
+.cart__checkbox {
+  display: none;
+}
+
+/* Контейнер для кнопки и цены */
+.card__actions {
+  margin-top: auto;
+  display: flex;
+  align-items: center; /* Выравнивание по центру по вертикали */
+  justify-content: space-between; /* Распределение пространства между ценой и кнопкой */
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.btn {
+  width: 220px;
+  height: 54px;
+  border-radius: 30px;
+  background-color: #DEC6BE;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: relative;
+  flex-shrink: 0; /* Запрет уменьшения кнопки */
+}
+
+.btn:hover {
+  width: 235px;
+  transform: scale(1.05);
+}
+
+.btn__default,
+.btn__added {
+  position: absolute;
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__default {
+  opacity: 1;
+}
+
+.btn__added {
+  opacity: 0;
+}
+
+.cart__checkbox:checked ~ .btn__default {
+  opacity: 0;
+}
+
+.cart__checkbox:checked ~ .btn__added {
+  opacity: 1;
+}
+
+.cart__checkbox:checked ~ .btn {
+  background-color: #c4d8c4;
+}
+
+.curcle_like {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  background-color: #F8D7D7;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+}
+
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.curcle_like:hover .heart {
+  transform: scale(1.1);
+}
+
+.like__checkbox:checked ~ .heart svg path {
+  fill: #E03C3C;
+}
+
+.like__checkbox:checked + .curcle_like {
+  background-color: #f8d7d7;
+}
+
+/* Tablet: 768–1279px */
+@media (max-width: 1279px) {
+  .card {
+    width: 303px;
+    height: 395px;
+  }
+
+  .card_image {
+    height: 158px;
+    padding: 8px;
+  }
+
+  .card__body {
+    padding: 15px;
+    gap: 8px;
+  }
+
+  .card__title {
+    font-size: 21px;
+  }
+
+  .card__text {
+    font-size: 18px;
+  }
+
+  .card__cost {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .card__actions {
+    gap: 10px;
+    padding-top: 8px;
+  }
+
+  .btn {
+    width: 127px;
+    height: 54px;
+    font-size: 18px;
+  }
+
+  .btn:hover {
+    width: 135px;
+  }
+
+  .curcle_like {
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+/* Mobile: ≤767px */
+@media (max-width: 767px) {
+  .card {
+    width: 230px;
+    height: 300px;
+  }
+
+  .card_image {
+    height: 140px;
+    padding: 6px;
+  }
+
+  .card__body {
+    padding: 12px;
+    gap: 6px;
+  }
+
+  .card__title {
+    font-size: 18px;
+  }
+
+  .card__text {
+    font-size: 16px;
+  }
+
+  .card__cost {
+    font-size: 16px;
+  }
+
+  .card__actions {
+    gap: 8px;
+    padding-top: 6px;
+  }
+
+  .btn {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .btn:hover {
+    width: 125px;
+  }
+
+  .curcle_like {
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+/* Small Mobile: ≤480px */
+@media (max-width: 480px) {
+  .card {
+    width: 260px;
+    height: 340px;
+  }
+
+  .card_image {
+    height: 130px;
+    padding: 5px;
+  }
+
+  .card__body {
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .card__title {
+    font-size: 16px;
+  }
+
+  .card__text {
+    font-size: 14px;
+  }
+
+  .card__cost {
+    font-size: 15px;
+  }
+
+  .card__actions {
+    gap: 6px;
+    padding-top: 5px;
+  }
+
+  .btn {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
