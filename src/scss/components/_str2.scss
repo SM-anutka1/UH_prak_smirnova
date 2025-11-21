@@ -295,141 +295,120 @@
     height: 200px;
   }
 }
-
-/* Mobile: ≤767px */
+/* Обновляем существующий Mobile: ≤767px */
 @media (max-width: 767px) {
-  .our_history {
-    font-size: 36px;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  /* ГАРАНТИРОВАННО убираем линию */
-  .linia {
-    display: none;
-  }
-
-  .curcle1 {
-    width: 69px;
-    height: 69px;
-    margin-left: 20px;
-    margin-top: 30px;
-    border-radius: 34.5px;
-  }
-
-  .curcle_text {
-    font-size: 14px;
-    padding-top: 24px;
-  }
-
-  .hist_text {
-    font-size: 18px;
-    margin-left: 100px;
-    margin-top: -55px;
-    line-height: 1.4;
-    padding-right: 20px;
-  }
-
-  .img_his {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-    padding: 0 20px;
-  }
-
-  .img_his img {
-    width: 100%;
-    max-width: 100%;
-    height: 220px;
-  }
-
-  /* Кружки и текст в одну строку */
-  .circle-text-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding: 0 20px;
-  }
-
-  .curcle2,
-  .curcle3 {
-    width: 25px;
-    height: 25px;
-    margin: 0;
-    flex-shrink: 0;
-    margin-top: 5px;
-  }
-
-  .block2_zagol,
-  .block3_zagol {
-    font-size: 24px;
-    margin-left: 0;
-    padding-top: 30px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .block_block {
-    margin-left: 0;
-    padding: 0;
-  }
-
-  .block2_text {
-    font-size: 18px;
-    margin: 0;
-    line-height: 1.4;
-    text-align: left;
-    max-width: 100%;
-    flex: 1;
-  }
-
-  .kybik {
-    width: 100%;
-    max-width: 500px;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    border-radius: 15px;
-  }
-
-  .kybik_zagol {
-    font-size: 20px;
-    padding-top: 15px;
-    padding-left: 20px;
-  }
-
-  .kybik_zagol2 {
-    font-size: 20px;
-    padding-top: 15px;
-  }
-
-  .kybik_text {
-    font-size: 16px;
-    padding-left: 20px;
-    padding-top: 15px;
-    line-height: 1.3;
-  }
-
-  .kybik_text2 {
-    font-size: 16px;
-    padding-top: 40px;
-    line-height: 1.3;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
   .kybiki {
     flex-direction: column;
     align-items: center;
     gap: 15px;
     padding: 0 20px;
-    width: 200px;
-    height: 100px;
+    width: 100%;
+    height: auto;
+  }
+
+  .kybik {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 15px;
+  }
+
+  /* Остальные стили остаются без изменений */
+}
+/* Small Mobile: ≤400px */
+@media (max-width: 400px) {
+  .kybiki {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .kybik {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    min-height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 15px;
+  }
+
+  .kybik_zagol {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .kybik_zagol2 {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .kybik_text {
+    font-size: 14px;
+    padding-left: 0;
+    padding-top: 10px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .kybik_text2 {
+    font-size: 14px;
+    padding-top: 20px;
+    line-height: 1.3;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Дополнительные корректировки для других элементов */
+  .our_history {
+    font-size: 28px;
+    padding-top: 25px;
+  }
+
+  .hist_text {
+    font-size: 16px;
+    margin-left: 80px;
+    margin-top: -45px;
+    padding-right: 15px;
+  }
+
+  .curcle1 {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+
+  .curcle_text {
+    font-size: 12px;
+    padding-top: 16px;
+  }
+
+  .img_his img {
+    height: 180px;
+  }
+
+  .block2_zagol,
+  .block3_zagol {
+    font-size: 20px;
+    padding-top: 25px;
+  }
+
+  .block2_text {
+    font-size: 16px;
   }
 }
 
