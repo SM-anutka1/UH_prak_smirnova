@@ -283,7 +283,6 @@
   }
 }
 
-/* Для планшетов в портретной ориентации */
 @media (max-width: 1279px) {
   .kybiki {
     flex-direction: column;
@@ -295,7 +294,6 @@
     height: 200px;
   }
 }
-/* Обновляем существующий Mobile: ≤767px */
 @media (max-width: 767px) {
   .kybiki {
     flex-direction: column;
@@ -320,7 +318,6 @@
 
   /* Остальные стили остаются без изменений */
 }
-/* Small Mobile: ≤400px */
 @media (max-width: 400px) {
   .kybiki {
     flex-direction: column;

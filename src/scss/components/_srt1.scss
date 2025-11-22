@@ -395,7 +395,6 @@
   height: auto;
 }
 
-/* Tablet: 768–1279px */
 @media (max-width: 1279px) {
   .about-section {
     padding: 0 60px;
@@ -704,7 +703,7 @@
 @media (max-width: 360px) {
   .about-section {
     padding: 0 15px;
-    margin-top: 380px;
+    margin-top: 25px;
   }
 
   .about-title,
@@ -740,26 +739,20 @@
   .advantages-list li {
     margin-bottom: 12px;
   }
-.first{
-  display: none;
-}
+
   .first_text {
-    display: none;
     font-size: 22px;
     padding-top: 8px;
   }
 
   .first_text2 {
-    display: none;
     font-size: 16px;
   }
 
   .block1 {
-    display: none;
-    margin-top: -500px;
+    margin-top: 12px;
     width: 45px;
     height: 280px;
-    z-index: 3;
   }
 
   .slaider,
@@ -856,13 +849,7 @@
     height: 220px;
   }
 }
-/* Скрываем весь первый блок с изображением и текстом */
-.first,
-.first_text,
-.first_text2,
-.block1 {
-  display: none;
-}
+
 
 .about-section {
   margin-top: 120px;
